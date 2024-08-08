@@ -1,0 +1,109 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  background-color: var(--background-color-black);
+  padding: 10px;
+  margin-top: 120px;
+  box-shadow: 0 -2px 15px #636363;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container h1 {
+  color: var(--color-text-light);
+  margin-bottom: 10px;
+}
+
+.container h4 {
+  color: var(--color-text-light);
+  margin-top: 10px;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container ul li {
+  font-size: 14px;
+  /* Reducir el tamaño del texto para dispositivos móviles */
+  font-weight: bold;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.container ul li a {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.container ul li a:hover {
+  color: var(--color-text-green);
+}
+
+.container h4 {
+  padding-top: 30px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  /* Ajuste del espacio entre íconos sociales */
+}
+
+.social img {
+  width: 30px;
+  border-radius: 50px;
+  /* Reducir el tamaño de los íconos sociales */
+}
+
+.social img:hover {
+  background-color: var(--button-color-hover-green);
+}
+
+.social a {
+  color: var(--color-text-light);
+  font-size: 14px;
+  /* Reducir el tamaño del texto de los íconos sociales */
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 5px 5px 0 5px;
+  box-shadow: 0 1px 15px #347d28;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    grid-template-columns: 40% 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: start;
+    height: auto;
+    /* Ajusta la altura automáticamente según el contenido */
+    padding: 40px;
+    /* Aumenta el espacio interior en pantallas más grandes */
+  }
+
+  .container {
+    margin-left: 0;
+    /* Elimina el margen izquierdo en pantallas más grandes */
+  }
+
+  .social img {
+    width: 35px;
+    /* Restaura el tamaño de los íconos sociales para pantallas grandes si es necesario */
+  }
+
+  .social a {
+    font-size: 16px;
+    /* Ajusta el tamaño del texto de los íconos sociales para pantallas grandes */
+  }
+}

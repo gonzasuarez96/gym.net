@@ -1,0 +1,112 @@
+.membresia {
+  position: relative;
+  width: 340px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 226, 226);
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+  margin: 20px;
+  background-color: #242424;
+  overflow: hidden;
+  box-shadow: 0 03px 14px 0 #347d28;
+}
+
+.membresia::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 140%;
+  background: linear-gradient(#347d28, #acdf4e);
+  animation: rotate 4s linear infinite;
+}
+
+.membresia::after {
+  content: "";
+  position: absolute;
+  background: #242424;
+  inset: 5px;
+  border-radius: 18px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.header {
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+}
+
+.title {
+  text-shadow: 1px 1px black;
+  font-size: 32px;
+  z-index: 2;
+  color: #acdf4e;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.divition {
+  width: 100%;
+  border: none;
+  height: 1px;
+  margin: 16px 0;
+  color: rgba(240, 9, 51, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.listado {
+  width: 100%;
+  padding: 0;
+  margin-left: 35px;
+  text-align: left;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.listado li {
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.buy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  z-index: 2;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: #3ba22e;
+  border-radius: 100px;
+  padding: 8px 32px;
+}
+
+.priceColor {
+  color: #339129;
+}

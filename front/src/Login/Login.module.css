@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px; 
+  width: 30%; 
+  text-align: right;
+}
+
+.input {
+  width: 70%;
+  background-color: #ccc;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(59, 58, 58, 0.855) inset;
+  transition: border-color 0.3s ease; 
+  border-style: solid; 
+  border-width: 2px; 
+}
+
+.input:hover,
+.input:focus {
+  border-color:#37d222;
+  outline: none; 
+}
+
+
+.buy {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: #3ba22e;
+  border-radius: 100px;
+  padding: 8px 32px;
+  text-transform: uppercase;
+}
+
+.registrate {
+  color: black;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.registrate:hover {
+  transform: scale(1.1);
+}
+

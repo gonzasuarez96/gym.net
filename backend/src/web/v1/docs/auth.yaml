@@ -1,0 +1,93 @@
+openapi: 3.0.0
+
+paths:
+  /v1/auth/register:
+    post:
+      summary: Registers a new user
+      description: Create a new user
+      operationId: registerUser
+      tags:
+        - auth
+      requestBody:
+        description: New user object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "201":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "400":
+          description: Invalid input
+  /v1/auth/login:
+    post:
+      summary: Logs in a user
+      description: Login a user
+      operationId: loginUser
+      tags:
+        - auth
+      requestBody:
+        description: Login credentials
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  token:
+                    type: string
+        "401":
+          description: Invalid email or password
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        phone_number:
+          type: string
+        address:
+          type: string
+        birth_date:
+          type: string
+          format: date
+        role:
+          type: string
+      required:
+        - name
+        - last_name
+        - email
+        - password
+        - phone_number
+        - address
+        - birth_date
+        - role

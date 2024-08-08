@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 20px;
+  background-color: var(--background-color-black);
+}
+
+.title h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  color: var(--color-text-light);
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.horario {
+  color: var(--color-text-light);
+}
+
+.horario h4 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.horario h5 {
+  color: var(--color-text-green);
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+  .sectionInfo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .imageContainer {
+    width: 90%;
+  }
+}

@@ -1,0 +1,173 @@
+/* Estilos generales (Computadora) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color-black-transl);
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: var(--background-color-shadow);
+  z-index: 1000;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-green);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: var(--button-color-hover-green);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.item {
+  margin: 0 10px;
+  position: relative;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.item a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.item:hover a,
+.item.active a {
+  color: var(--color-text-green);
+}
+
+.item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: var(--button-color-green);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.item.active::after,
+.item:hover::after {
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-green);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.login:hover {
+  transform: scale(1.05);
+  color: var(--color-text-hover-green);
+}
+
+.user {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+
+.user:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para pantallas de 768px o menos */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 100%;
+    display: none;
+  }
+
+  .items {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .item {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .item a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .login {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .login img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Estilos para el botón de menú en pantallas pequeñas */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--color-text-green);
+  cursor: pointer;
+}
+
+/* Mostrar el botón de menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .menuOpen {
+    display: block;
+  }
+}

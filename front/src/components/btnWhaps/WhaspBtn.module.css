@@ -1,0 +1,18 @@
+.btnWhasp {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  cursor: pointer;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.btnWhasp img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}

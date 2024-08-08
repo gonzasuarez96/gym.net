@@ -1,0 +1,8 @@
+.containermemb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 250px 60px 10px;
+}

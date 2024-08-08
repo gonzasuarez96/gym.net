@@ -1,0 +1,77 @@
+.container {
+  padding: 20px 60px 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerform{
+  margin-top: 70px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  color: white;
+  margin: 60px;
+  margin-right: 250px;
+}
+
+.form label {
+  text-align: end;
+  margin: 10px;
+}
+
+.form input {
+  margin: 10px;
+  width: 100%;
+  background-color: #ccc;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(59, 58, 58, 0.855) inset;
+  transition: border-color 0.3s ease; 
+  border-style: solid; 
+  border-width: 2px; 
+}
+
+
+.form input:hover,
+.form input:focus {
+  border-color:#37d222;
+  outline: none; 
+}
+
+
+.buy {
+  grid-column: 4;
+}
+
+.button:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: #3ba22e;
+  border-radius: 100px;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}

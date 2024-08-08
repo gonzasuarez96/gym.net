@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 600px;
+  }
+  
+  .card {
+    background-color: var(--background-color-light);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 40rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .logoutButton {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  
+  .formContainer {
+    margin-top: 1.5rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  
+  .errorMessage {
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .cancelButton {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .saveButton {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    color: #1f2937;
+  }
+  
+  .editButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  
+  .editButton {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .editButton:hover {
+    text-decoration: underline;
+  }
+  
+  .ordersSection {
+    margin-top: 1.5rem;
+  }
+  
+  .ordersTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .noOrdersMessage {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    color: #6b7280;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      width: 380px;
+    }
+  }
